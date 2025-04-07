@@ -10,20 +10,77 @@
     <title>Document</title>
 </head>
 
-<body>
-    <header class="container">
-        <img src="Images/Kleber.png" alt="Klebinho">
-        <p>Hi, I'm Kleber, the potato 🥔</p>
+<body class="p-3 mb-2 bg-dark text-white">
+    <header class="container text-center">
+        <img src="Images/Kleber.png" alt="Klebinho" class="rounded-circle p-3 mb-2 bg-dark-subtle text-dark-emphasis"
+            height="250" width="250">
+        <p class="lead text-warning">Hi, I'm Kleber, the potato 🥔</p>
         <h1>I'm a presenter of works</h1>
         <p>I am a virtual mascot in charge of presenting academic papers.</p>
-        <p>My skills:</p>
+        <p class="lead">My skills:</p>
         <div>
-            <p>Oratory</p>
-            <p>Video editing</p>
-            <p>Charisma</p>
-            <p>Potato 🥔</p>
+            <p class="badge text-bg-secondary">Oratory</p>
+            <p class="badge text-bg-secondary">Video editing</p>
+            <p class="badge text-bg-secondary">Charisma</p>
+            <p class="badge text-bg-secondary">Potato 🥔</p>
         </div>
     </header>
+    <main class="container mt-5">
+        <h2>My featured presentations:</h2>
+        <div class="row">
+
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card p-3 mb-2 bg-dark-subtle text-dark-emphasis">
+                    <img src="Images/Movimento Operário.png" class="card-img-top rounded-3" alt="Movimento Operário" width="100">
+                    <div class="card-body">
+                        <h5 class="card-title">Workers' Movement</h5>
+                        <p class="card-text">My first presentation: a seminar about the workers' movement. Held in the 9th grade class at CESMB.</p>
+                        <button onclick="window.location.href='https://youtu.be/JVL0KNoPH_s'" type="button" class="btn btn-secondary">Watch the video</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Projeto 2 -->
+             <div class="col-md-4">
+                <div class="card p-3 mb-2 bg-dark-subtle text-dark-emphasis">
+                    <img src="Images/O Samba.png" class="card-img-top rounded-3" alt="O Samba">
+                    <div class="card-body">
+                        <h5 class="card-title">The History of Samba</h5>
+                        <p class="card-text">A seminar that tells the history of samba in Brazil. Held in the 1st year high school class at CESMB.</p>
+                        <button onclick="window.location.href='https://youtu.be/7ouyegLmeiA'" type="button" class="btn btn-secondary">Watch the video</button>
+                    </div>
+                </div>
+             </div>
+                 <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card p-3 mb-2 bg-dark-subtle text-dark-emphasis">
+                    <img src="Images/Guerra das Coreias.png" class="card-img-top rounded-3" alt="Guerra das Coreias">
+                    <div class="card-body">
+                        <h5 class="card-title">Korean War</h5>
+                        <p class="card-text">A seminar that tells the story of the Korean War and how it was divided. Held in the 9th grade class of CESMB.</p>
+                        <button onclick="window.location.href='https://youtu.be/ZZzbQlj_vGs'" type="button" class="btn btn-secondary">Watch the video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container mt-5">
+        <h2>Contact me:</h2>
+        <div>
+            <p>
+                <a href="https://github.com/Luisgugu">Github</a>
+            </p>
+            <p> 
+                <a href="https://www.instagram.com/kleberbatinha/">Instagram</a>
+            </p>
+            <p>Email: Kleberbatinha@gmail.com</p>
+
+            <img class="text-center" src="Images/Kleber Rodando.gif" alt="KleberRodando">
+        </div>
+    </footer>
+    
     <!--Daqui pa baixo, segura na mão de Deus e pede bença-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
