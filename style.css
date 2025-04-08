@@ -1,36 +1,37 @@
 :root {
-    --cor-principal: #e3e3e3;
-    --cor-secundaria: #93919e;
-    --cor-cartao: #3d3d3d;
+  --cor-principal: #e3e3e3;
+  --cor-secundaria: #93919e;
+  --cor-cartao: #3d3d3d;
+}
+
+body {
+    background: linear-gradient(to bottom, #2f2f2f, #000000);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
   }
-  
-  body {
-      background: linear-gradient(to bottom, #2f2f2f, #000000);
-      /* ou para um gradiente mais sutil horizontalmente:
-      background: linear-gradient(to right, #2f2f2f, #282828); */
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-    }
-  
-    h1, h2, h5 {
-      color: var(--cor-principal);
-      font-weight: 700;
-    }
-  
-    footer a {
-      color: var(--cor-secundaria);
-    }
-  
-    footer p {
-      color: var(--cor-secundaria);
-    }
-  
-  header {
+
+  h1, h2, h5 {
+    color: var(--cor-principal);
+    font-weight: 700;
+  }
+
+  footer a, footer p, header {
     color: var(--cor-secundaria);
   }
-  
-  .samba-card {
-    background-color: var(--cor-cartao);
-    color: var(--cor-principal);
-  }
+
+.samba-card {
+  background-color: var(--cor-cartao);
+  color: var(--cor-principal);
+}
+
+.modal-content {
+  background-color: var(--cor-cartao);
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--cor-principal);
+}
+
+.modal-footer {
+  color: var(--cor-principal);
+}

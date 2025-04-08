@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -32,55 +33,126 @@
             <!-- Projeto 1 -->
             <div class="col-md-4">
                 <div class="card p-3 samba-card">
-                    <img src="Images/Movimento Operário.png" class="card-img-top rounded-3" alt="Movimento Operário" width="100">
+                    <img src="Images/Movimento Operário.png" class="card-img-top rounded-3" alt="Movimento Operário"
+                        width="100">
                     <div class="card-body">
                         <h5 class="card-title">Workers' Movement</h5>
-                        <p class="card-text">My first presentation: a seminar about the workers' movement. Held in the 9th grade class at CESMB.</p>
-                        <button onclick="window.location.href='https://youtu.be/JVL0KNoPH_s'" type="button" class="btn btn-secondary">Watch the video</button>
+                        <p class="card-text">My first presentation: a seminar about the workers' movement. Held in the
+                            9th grade class at CESMB.</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#modal1"><i class="bi bi-youtube"></i> Watch the video</button>
                     </div>
                 </div>
             </div>
 
-             <!-- Projeto 2 -->
-             <div class="col-md-4">
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
                 <div class="card p-3 samba-card">
                     <img src="Images/O Samba.png" class="card-img-top rounded-3" alt="O Samba">
                     <div class="card-body">
                         <h5 class="card-title">The History of Samba</h5>
-                        <p class="card-text">A seminar that tells the history of samba in Brazil. Held in the 1st year high school class at CESMB.</p>
-                        <button onclick="window.location.href='https://youtu.be/7ouyegLmeiA'" type="button" class="btn btn-secondary">Watch the video</button>
+                        <p class="card-text">A seminar that tells the history of samba in Brazil. Held in the 1st year
+                            high school class at CESMB.</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#modal2"><i class="bi bi-youtube"></i> Watch the video</button>
                     </div>
                 </div>
-             </div>
-                 <!-- Projeto 3 -->
+            </div>
+            <!-- Projeto 3 -->
             <div class="col-md-4">
                 <div class="card p-3 samba-card">
                     <img src="Images/Guerra das Coreias.png" class="card-img-top rounded-3" alt="Guerra das Coreias">
                     <div class="card-body">
                         <h5 class="card-title">Korean War</h5>
-                        <p class="card-text">A seminar that tells the story of the Korean War and how it was divided. Held in the 9th grade class of CESMB.</p>
-                        <button onclick="window.location.href='https://youtu.be/ZZzbQlj_vGs'" type="button" class="btn btn-secondary">Watch the video</button>
+                        <p class="card-text">A seminar that tells the story of the Korean War and how it was divided.
+                            Held in the 9th grade class of CESMB.</p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                            data-bs-target="#modal3"><i class="bi bi-youtube"></i> Watch the video</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <!-- Molda 1-->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Workers' Movement - Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>My first presentation: a seminar about the workers' movement. Held in the 9th grade class at
+                        CESMB.</p>
+                    <img class="img-fluid w-100" src="Images/Movimento Operário.png" alt="Movimento Operário">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/JVL0KNoPH_s">Watch the video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Molda 2-->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">The History of Samba - Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A seminar that tells the history of samba in Brazil. Held in the 1st year
+                        high school class at CESMB.</p>
+                    <img class="img-fluid w-100" src="Images/O Samba.png" alt="O Samba">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/7ouyegLmeiA">Watch the video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Molda 3-->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Korean War - Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A seminar that tells the story of the Korean War and how it was divided.
+                        Held in the 9th grade class of CESMB.</p>
+                    <img class="img-fluid w-100" src="Images/Guerra das Coreias.png" alt="Guerra das Coreias">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/ZZzbQlj_vGs">Watch the video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="container mt-5">
         <h2>Contact me:</h2>
         <div>
             <p>
+                <i class="bi bi-github"></i>
                 <a href="https://github.com/Luisgugu">Github</a>
             </p>
-            <p> 
+            <p>
+                <i class="bi bi-instagram"></i>
                 <a href="https://www.instagram.com/kleberbatinha/">Instagram</a>
             </p>
-            <p>Email: Kleberbatinha@gmail.com</p>
+            <p>
+                <i class="bi bi-envelope"></i>
+                Email: Kleberbatinha@gmail.com</p>
 
-            <img class="text-center" src="Images/Kleber Rodando.gif" alt="KleberRodando">
+            <img class="text-center img-fluid w-100" src="Images/Kleber Rodando.gif" alt="KleberRodando">
         </div>
     </footer>
-    
+
     <!--Daqui pa baixo, segura na mão de Deus e pede bença-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
